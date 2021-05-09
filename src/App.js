@@ -1,5 +1,15 @@
+import Editor from './components/Editor/Editor';
+import GlobalStyle, { Container } from './globalStyles';
+
 function App() {
-  return <div>Test</div>;
+  return (
+    <>
+      <GlobalStyle />
+      <Container>
+        <Editor />
+      </Container>
+    </>
+  );
 }
 
 export default App;
