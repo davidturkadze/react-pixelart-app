@@ -3,6 +3,7 @@ import { Button } from '../globalStyles';
 import ColorPicker from './ColorPicker';
 import styled from 'styled-components/macro';
 import colors from '../styles/colors';
+import Canvas from './Canvas';
 
 const EditorContainer = styled.div`
   border: 1px solid ${colors.black};
@@ -115,6 +116,8 @@ const Editor = () => {
       {hideCanvas && drawingOptions}
       <Button onClick={initCanvas}>{buttonText}</Button>
       {hideOptions && <ColorPicker colorSet={colorSet} selectedColor={selectedColor} onColorChange={changeColor} />}
+
+      <Canvas width={width} height={height} selectedColor={selectedColor} />
     </EditorContainer>
   );
 };
