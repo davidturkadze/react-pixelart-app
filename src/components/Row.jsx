@@ -5,7 +5,7 @@ import Cell from './Cell';
 
 const RowContainer = styled.div`
   display: flex;
-  width: fit-content;
+  max-width: 980px;
   border-top: 1px solid ${colors.black};
   border-left: 1px solid ${colors.black};
   &:last-of-type {

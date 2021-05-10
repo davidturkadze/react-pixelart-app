@@ -24,9 +24,6 @@ p {
 body {
   background-color: ${colors.white};
   color: ${colors.black};
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
 }
 `;
 
@@ -48,13 +45,14 @@ export const Button = styled.button`
   font-size: 1.25rem;
   background-color: ${colors.blue};
   color: ${colors.white};
-  min-width: 230px;
+  min-width: 250px;
   padding: 15px 40px;
   border-radius: 3px;
   text-transform: uppercase;
   border: none;
   transition: background-color 0.2s ease-in-out;
   cursor: pointer;
+  margin: 5px 0;
 
   &:hover {
     background-color: ${colors.dark_blue};

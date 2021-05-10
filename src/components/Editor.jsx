@@ -8,7 +8,7 @@ import Canvas from './Canvas';
 const EditorContainer = styled.div`
   border: 1px solid ${colors.black};
   border-radius: 8px;
-  max-width: 700px;
+
   width: 100%;
   padding: 40px 10px;
   margin-top: 50px;
