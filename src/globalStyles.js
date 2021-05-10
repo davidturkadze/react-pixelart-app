@@ -7,12 +7,6 @@ const GlobalStyle = createGlobalStyle`
    box-sizing: border-box;
 }
 
-
-body {
-  background-color: ${colors.white};
-  color: ${colors.black};
-}
-
  *,
  *::before,
  *::after {
@@ -25,6 +19,14 @@ h3,
 h4,
 p {
   margin: 0;
+}
+
+body {
+  background-color: ${colors.white};
+  color: ${colors.black};
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 `;
 

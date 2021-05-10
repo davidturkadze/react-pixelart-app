@@ -89,6 +89,8 @@ const Editor = () => {
         <OptionInput
           type="number"
           name="width"
+          min="8"
+          max="32"
           defaultValue={width}
           onChange={(e) => {
             setWidth(e.target.value);
@@ -100,6 +102,8 @@ const Editor = () => {
         <OptionInput
           type="number"
           name="height"
+          min="8"
+          max="32"
           defaultValue={height}
           onChange={(e) => {
             setHeight(e.target.value);
@@ -116,8 +120,7 @@ const Editor = () => {
       {hideCanvas && drawingOptions}
       <Button onClick={initCanvas}>{buttonText}</Button>
       {hideOptions && <ColorPicker colorSet={colorSet} selectedColor={selectedColor} onColorChange={changeColor} />}
-
-      <Canvas width={width} height={height} selectedColor={selectedColor} />
+      {hideOptions && <Canvas width={width} height={height} selectedColor={selectedColor} />}
     </EditorContainer>
   );
 };
