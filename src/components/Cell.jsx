@@ -20,6 +20,7 @@ const Cell = ({ selectedColor }) => {
 
   const applyColor = () => {
     setCellColor(selectedColor);
+    //this prevents hover effects overriding the click event
     setCanChangeColor(false);
   };
 

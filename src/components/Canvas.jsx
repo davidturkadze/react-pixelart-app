@@ -14,8 +14,7 @@ const CanvasContainer = styled.div`
 `;
 
 const Cells = styled.div`
-  margin-top: 40px;
-  margin-bottom: 32px;
+  margin: 35px 15px;
 `;
 
 const Canvas = ({ width, height, selectedColor }) => {
@@ -29,7 +28,10 @@ const Canvas = ({ width, height, selectedColor }) => {
 
   return (
     <CanvasContainer>
-      <Cells ref={canvasContentRef}>{rows}</Cells>
+      <div ref={canvasContentRef}>
+        <Cells>{rows}</Cells>
+      </div>
+
       <Button onClick={() => exportComponentAsPNG(canvasContentRef)}>Export as PNG</Button>
       <Button onClick={() => exportComponentAsJPEG(canvasContentRef)}>Export as JPEG</Button>
     </CanvasContainer>
