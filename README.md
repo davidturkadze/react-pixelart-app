@@ -12,10 +12,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 I use the following 3rd party libraries in my project: 
 
-Name |
---- | ---
-[styled-components](https://styled-components.com/) | To write CSS in JS that's scoped to a single component.
-[react-component-export-image](https://www.npmjs.com/package/react-component-export-image/) | To export components as jpeg, png or pdf
+
+- [styled-components](https://styled-components.com/) | To write CSS in JS that's scoped to a single component.
+- [react-component-export-image](https://www.npmjs.com/package/react-component-export-image/) | To export components as jpeg, png or pdf
 
 ## Installation / running of the project
 
